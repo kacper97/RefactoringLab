@@ -28,8 +28,9 @@ public class Profile {
    }
 
 private void calculateScore(Criteria criteria){
+	int score=0;
 	for (Criterion criterion: criteria){
-		int score = criterion.getWeight().getValue();
+		score += criterion.getWeight().getValue(); 
 	}
 }
 
